@@ -8,12 +8,15 @@ public class MenuView {
     public void displayMainMenu() {
 
     }
+
     public void displayFoodList(List<Food> foods) {
 
     }
+
     public void displayCart(List<CartItem> cart) {
 
     }
+
     public void displayMessage(String message) {
 
     }

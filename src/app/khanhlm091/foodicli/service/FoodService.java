@@ -10,6 +10,6 @@ public class FoodService {
 
     public static void addFood() {
         Food food = new Food(0, 100, "Banh kem", "Banh kem thom ngon");
-        FoodDatabase.foodList.add(food);
+        FoodDatabase.addFood(food);
     }
 }

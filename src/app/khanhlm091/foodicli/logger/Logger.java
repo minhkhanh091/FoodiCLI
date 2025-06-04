@@ -5,5 +5,7 @@ public class Logger {
         System.out.println(message);
     }
 
-    
+    public static void getError(Exception e) {
+        System.out.println("[ERROR] " + e.getMessage());
+    }
 }

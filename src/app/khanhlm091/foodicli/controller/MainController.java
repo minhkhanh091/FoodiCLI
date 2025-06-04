@@ -1,6 +1,8 @@
 package app.khanhlm091.foodicli.controller;
 
 import app.khanhlm091.foodicli.database.FoodDatabase;
+import app.khanhlm091.foodicli.database.StoreList;
+import app.khanhlm091.foodicli.logger.Logger;
 import app.khanhlm091.foodicli.model.Food;
 import app.khanhlm091.foodicli.view.MenuView;
 import app.khanhlm091.foodicli.service.*;
@@ -40,6 +42,12 @@ public class MainController {
                 for (Food food : FoodService.getAllFoods()) {
                     System.out.println(food.getName());
                 }
+
+            case 3:
+                StoreList.getStoreConnections(14);
+
+            case 4:
+                Logger.getMessage("Shortest path: " + RouteService.getShortestPath(2));
         }
     }
 }
